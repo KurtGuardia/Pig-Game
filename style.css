@@ -66,7 +66,7 @@ body {
     text-align: center;
     font-size: 80px;
     font-weight: 100;
-    color: #EB4D4D;
+    color: rgb(77, 119, 235);
     margin-bottom: 130px;
 }
 
@@ -76,19 +76,20 @@ body {
 .active .player-name::before {
     content: "\2022";
     font-size: 47px;
-    color: #EB4D4D;
+    color: rgb(77, 119, 235);
     top: -7px;
     right: 10px;
     
 }
 
 .player-current-box {
-    background-color: #EB4D4D;
+    background-color: rgb(77, 119, 235);
     color: #fff;
     width: 40%;
     margin: 0 auto;
     padding: 12px;
     text-align: center;
+    border-radius: 9px;
 }
 
 .player-current-label {
@@ -126,7 +127,7 @@ button:focus {
 }
 
 i {
-    color: #EB4D4D;
+    color: rgb(77, 119, 235);
     display: inline-block;
     margin-right: 15px;
     font-size: 32px;
@@ -153,11 +154,20 @@ i {
 .dice2 { top: 278px;}
 
 .winner { background-color: #f7f7f7; }
-.winner .player-name { font-weight: 300; color: #EB4D4D; font-size: 500%; }
+.winner .player-name { 
+    font-weight: 300;
+    color: #EB4D4D;
+    font-size: 450%;
+}
+
+.player-0-panel.winner,
+.player-1-panel.winner{
+    padding: 45px;
+}
 
 .setGoal {
     position: absolute;
-    width: 150px;
+    width: 170px;
     left: 50%;
     transform: translateX(-50%);
     color: #555;
@@ -166,5 +176,6 @@ i {
     text-transform: uppercase;
     top: 520px;
     text-align: center;
+    border: #555 1px solid;
 }
 
